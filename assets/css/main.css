@@ -1,7 +1,7 @@
 @import url(fontawesome-all.min.css);
 
-html, body, div, object, iframe, h1, h2, h4, h6, p, a, em, active,
-u, i, center, ol, ul, li, article, figure, footer, header, nav, section {
+html, body, div, object, iframe, h1, h2, h3, p, a, em, 
+u, i, center, ol, ul, li, article, footer, header, nav, section {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -9,7 +9,7 @@ u, i, center, ol, ul, li, article, figure, footer, header, nav, section {
 	font: inherit;
 	vertical-align: baseline;
 }
-article, details, figure, footer, header, nav, section, active, img {
+article, details, footer, header, nav, section, img {
 	display: block;
 }
 body {
@@ -43,19 +43,14 @@ body {
 		}
 		@media screen and (max-width: 736px) {
 			html {
-				font-size: 11pt;
-			}
-		}
-		@media screen and (max-width: 360px) {
-			html {
 				font-size: 10pt;
 			}
 		}
 	body {
 		font-family: 'Trebuchet MS';
 		color: #fff;
-		font-weight: 300;
-		font-size: 1rem;
+		font-weight: 400;
+		font-size: 1.2rem;
 		line-height: 1.65;
 	}
 	a {
@@ -63,9 +58,6 @@ body {
 		color: inherit;
 		font-weight: 600;
 	}
-		a:hover {
-			border-bottom-color: transparent;
-		}
 	p {
 		margin: 0 0 1rem 0;
 		color:#536c59;
@@ -85,10 +77,6 @@ body {
 		margin: 0 0 1rem 0;
 		text-transform: uppercase;
 	}
-		h1 a, h2 a{
-			color: inherit;
-			text-decoration: none;
-		}
 	h1 {
 		font-size: 2.25rem;
 		line-height: 1.3;
@@ -128,6 +116,7 @@ body {
 		.icon:before {
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+			line-height: inherit;
 		}
 		.icon > .label {
 			display: none;
@@ -135,11 +124,9 @@ body {
 		.icon:before {
 			line-height: inherit;
 		}
-		.icon.solid:before {
-			font-weight: 400;
-		}
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
+			font-weight: 400;
 		}
 /* Image */
 	.image {
@@ -170,20 +157,12 @@ body {
 				height: 50rem;
 			}
 		}
-/* List */
-	ul {
-		list-style: disc;
-		margin: 0 0 1rem 0;
-		padding-left: 1em;
-	}
-		ul li {
-			padding-left: 0.5em;
-		}
 /* Icons */
 	ul.icons {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		margin: 0 0 1rem 0;
 	}
 		ul.icons li {
 			display: inline-block;
@@ -203,10 +182,10 @@ body {
 				background-color: #6A8D73;
 			}
 				ul.icons li a:hover {
-					background-color: rgba(255, 255, 255, 0.075);
+					background-color: #89A894;
 				}
 				ul.icons li a:active {
-					background-color: rgba(255, 255, 255, 0.175);
+					background-color: #6a8d73ca;
 				}
 /* Wrapper */
 	#wrapper {
@@ -240,7 +219,6 @@ body {
 			position: relative;
 			margin-bottom: 2rem;
 		}
-		
 		#header .content {
 			background-color: #F4FDD9;
 			max-width: 100%;
@@ -256,7 +234,7 @@ body {
 			list-style: none;
 			padding-left: 0;
 			border: solid 2px #5E7B65;
-			border-radius: 4px;
+			border-radius: 2px;
 		}	
 		#header nav ul li {
 			padding-left: 0;
@@ -273,13 +251,13 @@ body {
 					padding: 0 1.25rem 0 1.45rem;
 					text-transform: uppercase;
 					text-align: center;
-					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
+					letter-spacing: 0.1rem;
+					font-size: 0.9rem;
 					border-bottom: 0;
 					background-color: #6A8D73;
 				}
 					#header nav ul li a:hover {
-						background-color: rgba(255, 255, 255, 0.212);
+						background-color: #89A894;
 					}
 					#header nav ul li a:active {
 						background-color: #6a8d73ca;
@@ -329,10 +307,10 @@ body {
 					height: 2.5rem;
 					border-radius: 100%;
 					background-position: center;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
 					background-size: 20px 20px;
 					background-repeat: no-repeat;
-					background-color: #A0CA92;
+					background-color: #5E7B65;
 				}
 /* Footer */
 	#footer {
