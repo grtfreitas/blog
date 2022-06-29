@@ -1,4 +1,35 @@
-@import url(fontawesome-all.min.css);
+@font-face {
+    font-family: 'D-DIN';
+    src: url(../webfonts/D-DIN.otf);
+}
+/* Font Awesome Free 5.9.0 by @fontawesome - https://fontawesome.com - License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)*/
+.fa{
+    display:inline-block;
+    text-rendering:auto;
+    line-height:1
+}
+    .fa-envelope:before{
+        content:"\f0e0"
+    }
+    .fa-linkedin:before{
+        content:"\f08c"
+    }
+    .fa-whatsapp:before{
+        content:"\f232"
+    }
+    .fa-github:before{
+        content:"\f09b"
+    }
+
+@font-face{
+    font-family:"Font Awesome 5 Brands";
+    src:url(../webfonts/fa-brands-400.woff2) format("woff2")
+}
+
+@font-face{
+    font-family:"Font Awesome 5 Free";
+    src:url(../webfonts/fa-regular-400.woff2) format("woff2")
+}
 
 html, body, div, object, iframe, h1, h2, h3, p, a, em, 
 u, i, center, ol, ul, li, article, footer, header, nav, section {
@@ -47,7 +78,7 @@ body {
 			}
 		}
 	body {
-		font-family: 'Trebuchet MS';
+		font-family: 'D-DIN';
 		color: #fff;
 		font-weight: 400;
 		font-size: 1.2rem;
@@ -307,10 +338,11 @@ body {
 					height: 2.5rem;
 					border-radius: 100%;
 					background-position: center;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
+					background-image: url(../webfonts/x.svg);
 					background-size: 20px 20px;
 					background-repeat: no-repeat;
-					background-color: #5E7B65;
+					background-color: #6A8D73;
+					border: solid 2px #5E7B65;
 				}
 /* Footer */
 	#footer {
