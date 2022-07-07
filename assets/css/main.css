@@ -250,7 +250,8 @@ article, footer, header, nav, section, img {
 					letter-spacing: 0.1rem;
 					font-size: 0.9rem;
 					border-bottom: 0;
-					background-color: #F4FDD9;
+					background-color: #048888;
+					color: #fff;
 				}
 	#main {
 		display: flex;
@@ -264,7 +265,7 @@ article, footer, header, nav, section, img {
 		#main article {
 			padding: 1.5rem;
 			position: relative;
-			width: 60rem;
+			width: 80rem;
 			max-width: 100%;
 			border-radius: 2px;
 			opacity: 0;
