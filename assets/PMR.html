@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-
-
 <title>PMR</title>
-
 <style type="text/css">
     /*!
 *
@@ -13105,31 +13102,16 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container">
-      
-
-
-
-  <div class="cell text_cell">
-    <button class="js-nbinteract-widget">
-      Loading widgets...
-    </button>
-  </div>
-
-
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Predictive-Modeling:-Using-Regression-models-to-predict-price-of-used-cars.">Predictive Modeling: Using Regression models to predict price of used cars.<a class="anchor-link" href="#Predictive-Modeling:-Using-Regression-models-to-predict-price-of-used-cars.">&#182;</a></h2><p>This project aims to show the process of creating Machine Learning models based on Simple, Multiple and Polynomial Regressions.
 In this project, R2 is used to evaluate the performance of the models. Pearson Coeficient's P-Value of &lt;= 0.05 rejects the null hypotesis.</p>
-
 </div>
 </div>
 </div>
 
-  
-
-  <div class="nbinteract-hide_in
-      cell border-box-sizing code_cell rendered">
+  <div class="nbinteract-hide_in cell border-box-sizing code_cell rendered">
     <div class="input">
 
 <div class="inner_cell">
@@ -13151,11 +13133,7 @@ In this project, R2 is used to evaluate the performance of the models. Pearson C
     </div>
 </div>
 </div>
-
   </div>
-
-  
-
   <div class="nbinteract-hide_in
       cell border-box-sizing code_cell rendered">
     <div class="input">
@@ -13282,8 +13260,6 @@ In this project, R2 is used to evaluate the performance of the models. Pearson C
 
   </div>
 
-  
-
   <div class="nbinteract-hide_in
       cell border-box-sizing code_cell rendered">
     <div class="input">
@@ -13322,8 +13298,6 @@ In this project, R2 is used to evaluate the performance of the models. Pearson C
 
   </div>
 
-  
-
   <div class="nbinteract-hide_in
       cell border-box-sizing code_cell rendered">
     <div class="input">
@@ -13333,7 +13307,7 @@ In this project, R2 is used to evaluate the performance of the models. Pearson C
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># HIDDEN</span>
 <span class="k">def</span> <span class="nf">UsedCarSalesPriceAnalysis</span><span class="p">(</span><span class="n">pathfile</span><span class="p">):</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">ETL</span><span class="p">(</span><span class="n">pathfile</span><span class="p">)</span>
-    <span class="n">dropdown_manufacturer</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Select Car:&#39;</span><span class="p">,</span><span class="n">options</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;car_name&#39;</span><span class="p">]))))</span>
+    <span class="n">dropdown_manufacturer</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Select a Car:&#39;</span><span class="p">,</span><span class="n">options</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;car_name&#39;</span><span class="p">]))))</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
 
     <span class="k">def</span> <span class="nf">output_by_manufacturer</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">carname</span><span class="p">):</span>
@@ -13356,60 +13330,28 @@ In this project, R2 is used to evaluate the performance of the models. Pearson C
 
   </div>
 
-  
-
-  <div class="
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">UsedCarSalesPriceAnalysis</span><span class="p">(</span><span class="s1">&#39;cars.csv&#39;</span><span class="p">)</span>
-</pre></div>
-
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+        <div class="input_area">
+          <div class=" highlight hl-ipython3">
+            <pre><span class="n">UsedCarSalesPriceAnalysis</span><span class="p">(</span><span class="s1">&#39;cars.csv&#39;</span><span class="p">)</span></pre>
+          </div>
+        </div>
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    
-
-
-
-  <div class="output_subarea output_widget_view ">
-    <button class="js-nbinteract-widget">
-      Loading widgets...
-    </button>
   </div>
-
-</div>
-
-<div class="output_area">
-
-    
-
-
-
-  <div class="output_subarea output_widget_view ">
-    <button class="js-nbinteract-widget">
-      Loading widgets...
-    </button>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_widget_view ">
+          <button class="js-nbinteract-widget">
+            Loading widgets...
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
-
 </div>
-
-</div>
-</div>
-
-  </div>
-
-
-
 <!-- Loads nbinteract package -->
 <script src="https://unpkg.com/nbinteract-core" async></script>
 <script>
@@ -13426,7 +13368,6 @@ In this project, R2 is used to evaluate the performance of the models. Pearson C
       provider: 'gh',
     })
     interact.prepare()
-
     window.interact = interact
   })()
 </script>
