@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
+
+
 <title>PMR</title>
+
 <style type="text/css">
     /*!
 *
@@ -13111,7 +13114,8 @@ In this project, R2 is used to evaluate the performance of the models. Pearson C
 </div>
 </div>
 
-  <div class="nbinteract-hide_in cell border-box-sizing code_cell rendered">
+  <div class="nbinteract-hide_in
+      cell border-box-sizing code_cell rendered">
     <div class="input">
 
 <div class="inner_cell">
@@ -13128,19 +13132,7 @@ In this project, R2 is used to evaluate the performance of the models. Pearson C
 <span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">interact_manual</span>
 <span class="kn">import</span> <span class="nn">IPython.display</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-  </div>
-  <div class="nbinteract-hide_in
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># HIDDEN</span>
 <span class="c1">#ETL e Data Cleaning</span>
 <span class="k">def</span> <span class="nf">ETL</span><span class="p">(</span><span class="n">pathfile</span><span class="p">):</span>
     <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">pathfile</span><span class="p">)</span>                                              <span class="c1">#transforming csv file into a pandas dataframe</span>
@@ -13252,21 +13244,7 @@ In this project, R2 is used to evaluate the performance of the models. Pearson C
     <span class="n">mlrx</span><span class="p">,</span> <span class="n">mlrm</span> <span class="o">=</span> <span class="n">MLRModelandPlot</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">targetcol</span><span class="p">)</span>
     <span class="n">prx</span><span class="p">,</span> <span class="n">prm</span> <span class="o">=</span> <span class="n">PRModelandPlot</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">targetcol</span><span class="p">,</span><span class="n">polydegrees</span><span class="p">)</span>
     <span class="n">ModelComparison</span><span class="p">(</span><span class="n">slrx</span><span class="p">,</span><span class="n">slrm</span><span class="p">,</span><span class="n">mlrx</span><span class="p">,</span><span class="n">mlrm</span><span class="p">,</span><span class="n">prx</span><span class="p">,</span><span class="n">prm</span><span class="p">,</span><span class="n">targetcol</span><span class="p">)</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-  </div>
-
-  <div class="nbinteract-hide_in
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># HIDDEN</span>
 <span class="c1">#Pearson coefficient calculation</span>
 <span class="k">def</span> <span class="nf">CoefPearson</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
     <span class="n">lcoef</span> <span class="o">=</span> <span class="p">[]</span>
@@ -13290,21 +13268,8 @@ In this project, R2 is used to evaluate the performance of the models. Pearson C
 <span class="k">def</span> <span class="nf">AllCoef</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
     <span class="n">df</span> <span class="o">=</span> <span class="n">CoefPearson</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
     <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;IndependentVar&#39;</span><span class="p">])</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-  </div>
-
-  <div class="nbinteract-hide_in
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># HIDDEN</span>
+<span class="c1">#Widget config</span>
 <span class="k">def</span> <span class="nf">UsedCarSalesPriceAnalysis</span><span class="p">(</span><span class="n">pathfile</span><span class="p">):</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">ETL</span><span class="p">(</span><span class="n">pathfile</span><span class="p">)</span>
     <span class="n">dropdown_manufacturer</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Select a Car:&#39;</span><span class="p">,</span><span class="n">options</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;car_name&#39;</span><span class="p">]))))</span>
@@ -13330,28 +13295,33 @@ In this project, R2 is used to evaluate the performance of the models. Pearson C
 
   </div>
 
-<div class="cell border-box-sizing code_cell rendered">
-  <div class="input">
-    <div class="inner_cell">
-        <div class="input_area">
-          <div class=" highlight hl-ipython3">
-            <pre><span class="n">UsedCarSalesPriceAnalysis</span><span class="p">(</span><span class="s1">&#39;cars.csv&#39;</span><span class="p">)</span></pre>
-          </div>
-        </div>
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">UsedCarSalesPriceAnalysis</span><span class="p">(</span><span class="s1">&#39;cars.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
     </div>
-  </div>
-  <div class="output_wrapper">
-    <div class="output">
-      <div class="output_area">
-        <div class="output_subarea output_widget_view ">
-          <button class="js-nbinteract-widget">
-            Loading widgets...
-          </button>
-        </div>
-      </div>
-    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+  <div class="output_subarea output_widget_view ">
+    <button class="js-nbinteract-widget">
+      Loading widgets...
+    </button>
   </div>
 </div>
+</div>
+</div>
+  </div>
 <!-- Loads nbinteract package -->
 <script src="https://unpkg.com/nbinteract-core" async></script>
 <script>
