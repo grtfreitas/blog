@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'D-DIN';
-    src: url(../webfonts/D-DIN.otf);
+    font-family: 'Inter';
+    src: url(../webfonts/Inter.otf);
 }
 /* Font Awesome Free 5.9.0 by @fontawesome - https://fontawesome.com - License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)*/
 .fa{
@@ -59,8 +59,7 @@ article, footer, header, nav, section, img {
 			}
 		}
 	body {
-		font-family: 'D-DIN';
-		font-weight: 400;
+		font-family: 'Inter';
 		font-size: 1.2rem;
 		line-height: 2.25;
 		background: #666;
@@ -76,18 +75,12 @@ article, footer, header, nav, section, img {
 	p {
 		margin: 0 0 1rem 0;
 		color:#000;
-		font-weight: 400;
+		font-weight: 300;
 		line-height: 1.2;
 	}
-		p.inner {
-		font-weight: 600;
-		}
-		p.project {
-		font-weight: 600;	
-		}
 	h1, h2, h3{
 		color: #000;
-		font-weight: 400;
+		font-weight: 600;
 		line-height: 1.2;
 		margin: 0 0 1rem 0;
 		text-transform: uppercase;
@@ -102,16 +95,6 @@ article, footer, header, nav, section, img {
 	}
 	h3 {
 		font-size: 0.85rem;
-	}
-	@media screen and (max-width: 736px) {
-		h1 {
-			font-size: 1.75rem;
-			line-height: 1.4;
-		}
-		h2 {
-			font-size: 1.25em;
-			line-height: 1.5;
-		}
 	}
 	.align-left {
 		text-align: left;
