@@ -64,7 +64,7 @@ article, footer, header, nav, section, img {
 		font-size: 1.2rem;
 		line-height: 2.25;
 		background: #666;
-		background-image: url('/images/a.jpg');
+		background-image: url('https://grtfreitas.github.io/images/a.jpg');
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 	}
