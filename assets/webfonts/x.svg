@@ -21,7 +21,7 @@
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
-     bordercolor="#666666"
+     bordercolor="#444"
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
@@ -58,7 +58,7 @@
     <g
        id="g2847"
        transform="matrix(1.360943,0,0,1.360943,-0.95499501,-106.24507)"
-       style="stroke:#ffffff">
+       style="stroke:#888">
       <path
          inkscape:connector-curvature="0"
          id="path2822"
